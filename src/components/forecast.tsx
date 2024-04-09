@@ -21,7 +21,6 @@ const Forecast = () => {
 
   return (
     <div>
-      <h1>天気予報</h1>
       <select value={areaCode} onChange={handleAreaChange}>
         <option value="014100">北海道(釧路・根室地方)</option>
         <option value="040000">宮城</option>
