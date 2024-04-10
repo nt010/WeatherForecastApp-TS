@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchWeatherData } from '../api/weatherApi';
 import { WeatherData } from '../types/weather';
+import styled from "styled-components";
 
 const Forecast = () => {
   const [areaCode, setAreaCode] = useState('130000');
@@ -20,7 +21,7 @@ const Forecast = () => {
   };
 
   return (
-    <div>
+    <Wrapper>
       <select value={areaCode} onChange={handleAreaChange}>
         <option value="014100">北海道(釧路・根室地方)</option>
         <option value="040000">宮城</option>
@@ -33,13 +34,34 @@ const Forecast = () => {
         <option value="471000">沖縄(本島)</option>
       </select>
       {weatherData && (
-        <div>
-          <h2>{weatherData.reportDatetime}</h2>
-          <p>{weatherData.text}</p>
-        </div>
+        <>
+          <StyledTime>{weatherData.reportDatetime}</StyledTime>
+          <StyledText>{weatherData.text}</StyledText>
+        </>
       )}
-    </div>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  background-color: blue;
+  text-align: center;
+  line-height: 60px;
+  margin: 30px;
+`;
+const StyledTime = styled.div`
+  background-color: blue;
+  text-align: center;
+  line-height: 60px;
+  margin: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+`;
+const StyledText = styled.div`
+  line-height: 60px;
+  margin: 30px;
+  color: white;
+`;
 
 export default Forecast;
