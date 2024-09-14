@@ -58,7 +58,9 @@ const Forecast = () => {
                 {formatDate(weatherData.reportDatetime)}
               </Typography>
               <Typography variant="body1" sx={{ marginTop: 2 }}>
-                {weatherData.text}
+                {weatherData.text.split('\n').map((text, index) => (
+                  <span key={index}>{text}<br/></span>
+                ))}
               </Typography>
             </>
           )}
