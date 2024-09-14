@@ -1,6 +1,9 @@
 # 天気予報のJSONデータを取り出して画面に表示させるサイトです。
 ![image](https://github.com/user-attachments/assets/68a45bfa-f8a9-4dac-93da-6dd94319cc1e)
 
+## 使用技術
+### React（TypeScript）、Material UI
+
 
 
 # Getting Started with Create React App
