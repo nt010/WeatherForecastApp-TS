@@ -1,5 +1,6 @@
 # 天気予報のJSONデータを取り出して画面に表示させるサイトです。
-![image](https://github.com/nt010/WeatherForecastApp-TS/assets/105714891/fa44824e-8bf9-4665-b239-f731d7b8cf05)
+![image](https://github.com/user-attachments/assets/68a45bfa-f8a9-4dac-93da-6dd94319cc1e)
+
 
 
 # Getting Started with Create React App
